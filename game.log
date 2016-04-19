@@ -1,0 +1,74 @@
+Info (GameContainer): Running the game engine.
+Info (Window): Window Created.
+Info (Input): Input Handler has started.
+Info (GameContainer): Engine has started.
+Info (ImageLoader): Loading image /player/ball.png
+Info (ImageLoader): Loading image /player/triangle.png
+Info (ImageLoader): Loading image /player/x.png
+Info (ImageLoader): Loading image /player/stick.png
+Info (ImageLoader): Loading image /npc/ball.png
+Info (ImageLoader): Loading image /npc/triangle.png
+Info (ImageLoader): Loading image /npc/x.png
+Info (ImageLoader): Loading image /npc/outsider.png
+Info (ImageLoader): Loading image /blocks/BasicTile.png
+Info (ImageLoader): Loading image /blocks/BendingBlockTile.png
+Info (ImageLoader): Loading image /blocks/JumpTile.png
+Info (ImageLoader): Loading image /blocks/NextLvl.png
+Info (ImageLoader): Loading image /blocks/SlowTile.png
+Info (ImageLoader): Loading image /blocks/SmallTile.png
+Info (ImageLoader): Loading image /blocks/SpeedTile.png
+Info (ImageLoader): Loading image /blocks/stick.png
+Info (ImageLoader): Loading image /blocks/scroll.png
+Info (ImageLoader): Loading image /blocks/stopTile.png
+Info (ImageLoader): Loading image /blocks/spike.png
+Info (ImageLoader): Loading image /blocks/sign.png
+Info (ImageLoader): Loading image /gates/gate_ball.png
+Info (ImageLoader): Loading image /gates/gate_x.png
+Info (ImageLoader): Loading image /gates/gate_triangle.png
+Info (ImageLoader): Loading image /ui/cant_shift.png
+Info (ImageLoader): Loading image /ui/button.png
+Info (ImageLoader): Loading image /ui/retry.png
+Info (ImageLoader): Loading image /ui/menu.png
+Info (SoundClip): Loaded sound /sound/jump.wav.
+Info (SoundClip): Loaded sound /sound/click.wav.
+Info (ImageLoader): Loading image /ui/background.png
+Info (AbstractGame): Pushing game state MenuState
+Info (SoundClip): Loaded sound /sound/soundtrack1.wav.
+Info (MapLoader): The map level_17.map has been loaded!
+Info (ObjectManager): Added new object Player (tag: player)
+Info (ImageLoader): Loading image /ui/score.png
+Info (MapLoader): The map level_17.map has been loaded!
+Info (ObjectManager): Added new object Player (tag: player)
+Info (ImageLoader): Loading image /ui/score.png
+Info (MapLoader): The map level_17.map has been loaded!
+Info (ObjectManager): Added new object Player (tag: player)
+Info (ImageLoader): Loading image /ui/score.png
+Info (MapLoader): The map level_17.map has been loaded!
+Info (ObjectManager): Added new object Player (tag: player)
+Info (ImageLoader): Loading image /ui/score.png
+Info (MapLoader): The map level_17.map has been loaded!
+Info (ObjectManager): Added new object Player (tag: player)
+Info (ImageLoader): Loading image /ui/score.png
+Info (MapLoader): The map level_17.map has been loaded!
+Info (ObjectManager): Added new object Player (tag: player)
+Info (ImageLoader): Loading image /ui/score.png
+Info (SoundClip): Loaded sound /sound/soundtrack2.wav.
+Info (MapLoader): The map level_17.map has been loaded!
+Info (ObjectManager): Added new object Player (tag: player)
+Info (ImageLoader): Loading image /ui/score.png
+Info (MapLoader): The map level_17.map has been loaded!
+Info (ObjectManager): Added new object Player (tag: player)
+Info (ImageLoader): Loading image /ui/score.png
+Info (MapLoader): The map level_17.map has been loaded!
+Info (ObjectManager): Added new object Player (tag: player)
+Info (ImageLoader): Loading image /ui/score.png
+Info (MapLoader): The map level_17.map has been loaded!
+Info (ObjectManager): Added new object Player (tag: player)
+Info (ImageLoader): Loading image /ui/score.png
+Info (MapLoader): The map level_17.map has been loaded!
+Info (ObjectManager): Added new object Player (tag: player)
+Info (ImageLoader): Loading image /ui/final.png
+Error (MapLoader): null
+Info (MapLoader): The map level_18.map has been loaded!
+Info (ImageLoader): Loading image /ui/score.png
+Info (SoundClip): Loaded sound /sound/soundtrack2.wav.
