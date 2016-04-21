@@ -114,8 +114,8 @@ public class Player extends GameObject {
 			jump_boost_timer = 0;
 			dx = 0;
 			dy = 0;
-			y = 864;
-			x = map.getPlayerX();
+			y = 864 / 2;
+			x = (64 + 36) / 2;
 			return;
 		case 10:
 		case 11:
