@@ -20,12 +20,12 @@ public class Player extends GameObject {
 	
 	private double dx, dy;
 	
-	private final double MOVE_SPEED = 0.5;
-	private final double MAX_SPEED = 2;
-	private final double MAX_FALLING_SPEED = 14;
-	private final double STOP_SPEED = 0.44;
-	private final double JUMP_START = -14;
-	private final double GRAVITY = 0.64;
+	private final double MOVE_SPEED = 0.5 / 2;
+	private final double MAX_SPEED = 2 / 2;
+	private final double MAX_FALLING_SPEED = 14 / 2;
+	private final double STOP_SPEED = 0.44 / 2;
+	private final double JUMP_START = -14 / 2;
+	private final double GRAVITY = 0.64 / 2;
 	
 	private double speed_boost = 0;
 	private double jump_boost = 0;
@@ -44,10 +44,10 @@ public class Player extends GameObject {
 	public Player(Map map) {
 		shape = Shape.BALL;
 		this.map = map;
-		w = 56;
-		h = 56;
-		x = 64 + 36;
-		y = 864;
+		w = 30;
+		h = 30;
+		x = (64 + 36) / 2;
+		y = 864 / 2;
 		tag = "player";
 	}
 	
@@ -73,11 +73,11 @@ public class Player extends GameObject {
 		switch(tile) {
 		case 3:
 			jump_boost_timer = 3;
-			jump_boost = -6;
+			jump_boost = -6 / 2;
 			break;
 		case 7:
 			speed_boost_timer = 3;
-			speed_boost = 1.25;
+			speed_boost = 1.25 / 2;
 			break;
 		case 4:
 			shape = Shape.BALL;
@@ -88,8 +88,8 @@ public class Player extends GameObject {
 			jump_boost_timer = 0;
 			dx = 0;
 			dy = 0;
-			y = 864;
-			x = map.getPlayerX();
+			y = 864 / 2;
+			x = (64 + 36) / 2;
 			return;
 		case 2:
 			shift_timer = 1.5;
@@ -135,7 +135,7 @@ public class Player extends GameObject {
 			break;
 		}
 		
-		if(gc.getInput().isKey(KeyEvent.VK_SPACE) || gc.getInput().isKey(KeyEvent.VK_UP)) {
+		if(gc.getInput().isKey(KeyEvent.VK_SPACE) || gc.getInput().isKey(KeyEvent.VK_UP) || gc.getInput().isKey(KeyEvent.VK_W)) {
 			jumping = true;
 		}else {
 			jumping = false;
@@ -154,14 +154,24 @@ public class Player extends GameObject {
 			if(dx > 0) {
 				tile = map.getTile((int)(x / map.getTileSize()), (int)(y / map.getTileSize() + 1));
 				dx -= STOP_SPEED;
-				if(dx < 0 || tile == 22) {
+				if(dx < 0) {
 					dx = 0;
+				}
+				if(tile == 22) {
+					dx = 0;
+					speed_boost_timer = -1;
+					speed_boost = 0;
 				}
 			}else if(dx < 0) {
 				tile = map.getTile((int)(x / map.getTileSize()), (int)(y / map.getTileSize() + 1));
 				dx += STOP_SPEED;
-				if(dx > 0 || tile == 22) {
+				if(dx > 0) {
 					dx = 0;
+				}
+				if(tile == 22) {
+					dx = 0;
+					speed_boost_timer = -1;
+					speed_boost = 0;
 				}
 			}
 		}
@@ -308,25 +318,25 @@ public class Player extends GameObject {
 	public void render(GameContainer gc, Graphics g) {
 		switch(shape) {
 		case BALL:
-			g.drawImage(Assets.player_ball, map.getTransX() + (int) x - 32, map.getPlayerY() + (int) y - 96, null);
+			g.drawImage(Assets.player_ball, map.getTransX() + (int) x - 16, map.getPlayerY() + (int) y - 48, (int)w, (int)h, null);
 			break;
 		case TRIANGLE:
-			g.drawImage(Assets.player_tirangle, map.getTransX() + (int) x - 32, map.getPlayerY() + (int) y - 96, null);
+			g.drawImage(Assets.player_tirangle, map.getTransX() + (int) x - 16, map.getPlayerY() + (int) y - 48, (int)w, (int)h, null);
 			break;
 		case X:
-			g.drawImage(Assets.player_x, map.getTransX() + (int) x - 32, map.getPlayerY() + (int) y - 96, null);
+			g.drawImage(Assets.player_x, map.getTransX() + (int) x - 16, map.getPlayerY() + (int) y - 48, (int)w, (int)h, null);
 			break;
 		case STICK:
-			g.drawImage(Assets.player_stick, map.getTransX() + (int) x - 32, map.getPlayerY() + (int) y - 96, null);
+			g.drawImage(Assets.player_stick, map.getTransX() + (int) x - 16, map.getPlayerY() + (int) y - 48, (int)w, (int)h, null);
 		}
 		if(shift_timer > 0) {
-			g.drawImage(Assets.cant_shift,  10, 10, null);
+			g.drawImage(Assets.cant_shift,  10, 10, 32, 32, null);
 		}
 		if(jump_boost_timer > 0) {
-			g.drawImage(Assets.JumpTile,  10 + 10 + 64, 10, null);
+			g.drawImage(Assets.JumpTile,  10 + 10 + 32, 10, 32, 32, null);
 		}
 		if(speed_boost_timer > 0) {
-			g.drawImage(Assets.SpeedTile,  10 + 10 + 64 + 10 + 64, 10, null);
+			g.drawImage(Assets.SpeedTile,  10 + 10 + 32 + 10 + 32, 10, 32, 32, null);
 		}
 		if(name != null) {
 			BufferedImage img = Assets.loadImage(name);

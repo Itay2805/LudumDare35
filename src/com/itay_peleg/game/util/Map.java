@@ -2,6 +2,7 @@ package com.itay_peleg.game.util;
 
 import java.awt.Color;
 import java.awt.Graphics;
+import java.awt.image.BufferedImage;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
@@ -13,7 +14,7 @@ import com.itay_peleg.game.states.ScoreState;
 public class Map {
 	
 	private int w, h, playerX, playerY;
-	private int tileSize = 64;
+	private int tileSize = 32;
 	
 	private int[][] map;
 	private int level = 0;
@@ -68,69 +69,73 @@ public class Map {
 						g.fillRect(transX + x * tileSize, transY + y * tileSize, tileSize, tileSize);
 						break;
 					case 1:
-						g.drawImage(Assets.basicTile, transX + x * tileSize, transY + y * tileSize, null);
+						draw(Assets.basicTile, x, y, g);
 						break;
 					case 2:
-						g.drawImage(Assets.bendingBlockTile, transX + x * tileSize, transY + y * tileSize, null);
+						draw(Assets.bendingBlockTile, x, y, g);
 						break;
 					case 3:
-						g.drawImage(Assets.JumpTile, transX + x * tileSize, transY + y * tileSize, null);
+						draw(Assets.JumpTile, x, y, g);
 						break;
 					case 4:
-						g.drawImage(Assets.NextLevelTile, transX + x * tileSize, transY + y * tileSize, null);
+						draw(Assets.NextLevelTile, x, y, g);
 						break;
 					case 5:
-						g.drawImage(Assets.SlowTile, transX + x * tileSize, transY + y * tileSize, null);
+						draw(Assets.SlowTile, x, y, g);
 						break;
 					case 6:
-						g.drawImage(Assets.SmallTile, transX + x * tileSize, transY + y * tileSize, null);
+						draw(Assets.SmallTile, x, y, g);
 						break;
 					case 7:
-						g.drawImage(Assets.SpeedTile, transX + x * tileSize, transY + y * tileSize, null);
+						draw(Assets.SpeedTile, x, y, g);
 						break;
 					case 8:
-						g.drawImage(Assets.stick, transX + x * tileSize, transY + y * tileSize, null);
+						draw(Assets.stick, x, y, g);
 						break;
 					case 9:
-						g.drawImage(Assets.spike, transX + x * tileSize, transY + y * tileSize, null);
+						draw(Assets.spike, x, y, g);
 						break;
 					case 10:
 					case 11:
 					case 12:
 					case 13:
 					case 14:	
-						g.drawImage(Assets.sign, transX + x * tileSize, transY + y * tileSize, null);
+						draw(Assets.sign, x, y, g);
 						break;
 					case 15:
-						g.drawImage(Assets.gate_triangle, transX + x * tileSize, transY + y * tileSize, null);
+						draw(Assets.gate_triangle, x, y, g);
 						break;
 					case 16:
-						g.drawImage(Assets.gate_x, transX + x * tileSize, transY + y * tileSize, null);
+						draw(Assets.gate_x, x, y, g);
 						break;
 					case 17:
-						g.drawImage(Assets.gate_ball, transX + x * tileSize, transY + y * tileSize, null);
+						draw(Assets.gate_ball, x, y, g);
 						break;
 					case 18:
-						g.drawImage(Assets.scroll, transX + x * tileSize, transY + y * tileSize, null);
+						draw(Assets.scroll, x, y, g);
 						break;
 					case 19:
-						g.drawImage(Assets.npc_ball, transX + x * tileSize, transY + y * tileSize, null);
+						draw(Assets.npc_ball, x, y, g);
 						break;
 					case 20:
-						g.drawImage(Assets.npc_x, transX + x * tileSize, transY + y * tileSize, null);
+						draw(Assets.npc_x, x, y, g);
 						break;
 					case 21:
-						g.drawImage(Assets.npc_tirangle, transX + x * tileSize, transY + y * tileSize, null);
+						draw(Assets.npc_tirangle, x, y, g);
 						break;
 					case 22:
-						g.drawImage(Assets.stopTile, transX + x * tileSize, transY + y * tileSize, null);
+						draw(Assets.stopTile, x, y, g);
 						break;
 					case 23:
-						g.drawImage(Assets.outsider, transX + x * tileSize, transY + y * tileSize, null);
+						draw(Assets.outsider, x, y, g);
 						break;
 				}
 			}
 		}
+	}
+	
+	private void draw(BufferedImage img, int x, int y, Graphics g) {
+		g.drawImage(img, transX + x * tileSize, transY + y * tileSize, tileSize, tileSize, null);
 	}
 	
 	// Getters And Setters

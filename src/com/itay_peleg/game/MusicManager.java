@@ -9,6 +9,8 @@ public class MusicManager {
 	
 	private int current = 0;
 	private SoundClip clip;
+	
+	private boolean playing = true;
 
 	public MusicManager() {}
 	
@@ -24,9 +26,29 @@ public class MusicManager {
 	}
 	
 	public void update(GameContainer gc) {
-		if(clip == null || !clip.isRunning()) {
-			if(clip != null) clip.close();
-			next();
+		if(playing) {
+			if(clip == null || !clip.isRunning()) {
+				if(clip != null) clip.close();
+				next();
+			}			
+		}
+	}
+	
+	public boolean isPlaying() {
+		return playing;
+	}
+	
+	public void setPlaying(boolean playing) {
+		this.playing = playing;
+		if(playing == false) {
+			clip.stop();
+		}
+	}
+	
+	public void togglePlaying() {
+		playing = !playing;
+		if(playing == false) {
+			clip.stop();
 		}
 	}
 	

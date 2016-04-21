@@ -1,5 +1,6 @@
 package com.itay_peleg.game.states;
 
+import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 
@@ -8,6 +9,7 @@ import com.itay_peleg.engine.components.State;
 import com.itay_peleg.engine.gui.GUIContainer;
 import com.itay_peleg.engine.gui.builtin.Button;
 import com.itay_peleg.game.Assets;
+import com.itay_peleg.game.GameManager;
 import com.itay_peleg.game.util.Save;
 
 public class MenuState extends State {
@@ -16,25 +18,27 @@ public class MenuState extends State {
 	private BufferedImage bg; 
 	
 	/* Too lazy to do it smart XD */
-	private Button level_1 = new Button("1", 10 * 1 + 130 * 0, 500, 130, 130);
-	private Button level_2 = new Button("2", 10 * 2 + 130 * 1, 500, 130, 130);
-	private Button level_3 = new Button("3", 10 * 3 + 130 * 2, 500, 130, 130);
-	private Button level_4 = new Button("4", 10 * 4 + 130 * 3, 500, 130, 130);
-	private Button level_5 = new Button("5", 10 * 5 + 130 * 4, 500, 130, 130);
-	private Button level_6 = new Button("6", 10 * 6 + 130 * 5, 500, 130, 130);
-	private Button level_7 = new Button("7", 10 * 7 + 130 * 6, 500, 130, 130);
-	private Button level_8 = new Button("8", 10 * 8 + 130 * 7, 500, 130, 130);
-	private Button level_9 = new Button("9", 10 * 9 + 130 * 8, 500, 130, 130);
+	private Button level_1 = new Button("1", 5 * 1 + 65 * 0, 250, 65, 65);
+	private Button level_2 = new Button("2", 5 * 2 + 65 * 1, 250, 65, 65);
+	private Button level_3 = new Button("3", 5 * 3 + 65 * 2, 250, 65, 65);
+	private Button level_4 = new Button("4", 5 * 4 + 65 * 3, 250, 65, 65);
+	private Button level_5 = new Button("5", 5 * 5 + 65 * 4, 250, 65, 65);
+	private Button level_6 = new Button("6", 5 * 6 + 65 * 5, 250, 65, 65);
+	private Button level_7 = new Button("7", 5 * 7 + 65 * 6, 250, 65, 65);
+	private Button level_8 = new Button("8", 5 * 8 + 65 * 7, 250, 65, 65);
+	private Button level_9 = new Button("9", 5 * 9 + 65 * 8, 250, 65, 65);
 	
-	private Button level_10 = new Button("10", 10 * 1 + 130 * 0, 500 + 10 * 2 + 130 * 1, 130, 130);
-	private Button level_11 = new Button("11", 10 * 2 + 130 * 1, 500 + 10 * 2 + 130 * 1, 130, 130);
-	private Button level_12 = new Button("12", 10 * 3 + 130 * 2, 500 + 10 * 2 + 130 * 1, 130, 130);
-	private Button level_13 = new Button("13", 10 * 4 + 130 * 3, 500 + 10 * 2 + 130 * 1, 130, 130);
-	private Button level_14 = new Button("14", 10 * 5 + 130 * 4, 500 + 10 * 2 + 130 * 1, 130, 130);
-	private Button level_15 = new Button("15", 10 * 6 + 130 * 5, 500 + 10 * 2 + 130 * 1, 130, 130);
-	private Button level_16 = new Button("16", 10 * 7 + 130 * 6, 500 + 10 * 2 + 130 * 1, 130, 130);
-	private Button level_17 = new Button("17", 10 * 8 + 130 * 7, 500 + 10 * 2 + 130 * 1, 130, 130);
-	private Button level_18 = new Button("18", 10 * 9 + 130 * 8, 500 + 10 * 2 + 130 * 1, 130, 130);
+	private Button level_10 = new Button("10", 5 * 1 + 65 * 0, 250 + 5 * 2 + 65 * 1, 65, 65);
+	private Button level_11 = new Button("11", 5 * 2 + 65 * 1, 250 + 5 * 2 + 65 * 1, 65, 65);
+	private Button level_12 = new Button("12", 5 * 3 + 65 * 2, 250 + 5 * 2 + 65 * 1, 65, 65);
+	private Button level_13 = new Button("13", 5 * 4 + 65 * 3, 250 + 5 * 2 + 65 * 1, 65, 65);
+	private Button level_14 = new Button("14", 5 * 5 + 65 * 4, 250 + 5 * 2 + 65 * 1, 65, 65);
+	private Button level_15 = new Button("15", 5 * 6 + 65 * 5, 250 + 5 * 2 + 65 * 1, 65, 65);
+	private Button level_16 = new Button("16", 5 * 7 + 65 * 6, 250 + 5 * 2 + 65 * 1, 65, 65);
+	private Button level_17 = new Button("17", 5 * 8 + 65 * 7, 250 + 5 * 2 + 65 * 1, 65, 65);
+	private Button level_18 = new Button("18", 5 * 9 + 65 * 8, 250 + 5 * 2 + 65 * 1, 65, 65);
+	
+	private Button music = new Button("music", 10, 10, 100, 50);
 
 	public MenuState() {
 		bg = Assets.loadImage("/ui/background.png");
@@ -58,6 +62,8 @@ public class MenuState extends State {
 		if(level >= 15) gui.addGUIObject(level_16.setButtonImage(Assets.button));
 		if(level >= 16) gui.addGUIObject(level_17.setButtonImage(Assets.button));
 		if(level >= 17) gui.addGUIObject(level_18.setButtonImage(Assets.button));
+		
+		gui.addGUIObject(music.setTextColor(Color.BLACK));
 	}
 	
 	public void update(GameContainer gc) {
@@ -81,6 +87,11 @@ public class MenuState extends State {
 		if(level_16.isInteracted() && level >= 15) { gc.getGame().setState(new PlayState(15)); Assets.click.play(); }
 		if(level_17.isInteracted() && level >= 16) { gc.getGame().setState(new PlayState(16)); Assets.click.play(); }
 		if(level_18.isInteracted() && level >= 17) { gc.getGame().setState(new PlayState(17)); Assets.click.play(); }
+	
+		if(music.isInteracted()) {
+			GameManager game = (GameManager) gc.getGame();
+			game.music.togglePlaying();
+		}
 	}
 
 	public void render(GameContainer gc, Graphics g) {

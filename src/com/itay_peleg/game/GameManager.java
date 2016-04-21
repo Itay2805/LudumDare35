@@ -13,7 +13,7 @@ import com.itay_peleg.game.states.MenuState;
 
 public class GameManager extends AbstractGame {
 	
-	private MusicManager music;
+	public MusicManager music;
 	
 	public void init() {
 		music = new MusicManager();
@@ -40,7 +40,7 @@ public class GameManager extends AbstractGame {
 			e.printStackTrace();
 		}
 		GameContainer gc = new GameContainer(new GameManager());
-		gc.setHeight(480 * 2).setWidth(640 * 2);
+		gc.setHeight(480).setWidth(640);
 		gc.setTitle("Shape Bender");
 		gc.start();
 	}

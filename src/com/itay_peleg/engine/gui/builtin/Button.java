@@ -15,7 +15,7 @@ public class Button extends AbstractGUI {
 	private int x, y, w, h;
 	
 	private String text = "";
-	private Font textFont = new Font("Cochin", Font.BOLD, 60);
+	private Font textFont = new Font("Cochin", Font.BOLD, 30);
 	private Color textColor = Color.WHITE;
 	private BufferedImage buttonImage = null;
 	private Color color = Color.BLACK;
@@ -55,7 +55,7 @@ public class Button extends AbstractGUI {
 			g.setColor(textColor);
 			g.drawString(text, x + 5, y + h / 2 + 15);
 		}else {
-			g.drawImage(buttonImage, x, y, null);
+			g.drawImage(buttonImage, x, y, w, h, null);
 			g.setFont(textFont);
 			g.setColor(textColor);
 			g.drawString(text, x + w / 2 - (30 * text.length()) / 2, y + h / 2 + 30);

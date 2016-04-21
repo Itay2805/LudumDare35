@@ -16,8 +16,8 @@ public class ScoreState extends State {
 	
 	private Map map;
 	private GUIContainer gui = new GUIContainer();
-	private Button menu = new Button("", 10, 480 * 2 - 180 - 10, 180, 100);
-	private Button retry = new Button("", 640 * 2 - 180 - 10, 480 * 2 - 180 - 10, 180, 100);
+	private Button menu = new Button("", 5, 480 - 90 - 5, 90, 50);
+	private Button retry = new Button("", 640 - 90 - 5, 480 - 90 - 10, 90, 50);
 	private BufferedImage score;
 	
 	public ScoreState(Map map) {
@@ -41,22 +41,22 @@ public class ScoreState extends State {
 	public void render(GameContainer gc, Graphics g) {
 		g.drawImage(score, 0, 0, gc.getWidth(), gc.getHeight(), null);
 		g.setColor(Color.BLACK);
-		g.setFont(new Font("arial", Font.BOLD, 30));
+		g.setFont(new Font("arial", Font.BOLD, 30 / 2));
 		if(map.getLevel() == 0) {
 			int strLen = (int) g.getFontMetrics().getStringBounds("You died in the first level...", g).getWidth();
-			g.drawString("You died in the first level...", gc.getWidth() / 2 - strLen / 2, 100);			
+			g.drawString("You died in the first level...", gc.getWidth() / 2 - strLen / 2, 50);			
 		}else if(map.getLevel() == 1) {
 			int strLen = (int) g.getFontMetrics().getStringBounds("It will be much harder...", g).getWidth();
-			g.drawString("It will be much harder...", gc.getWidth() / 2 - strLen / 2, 100);			
+			g.drawString("It will be much harder...", gc.getWidth() / 2 - strLen / 2, 50);			
 		}else if(map.getLevel() == 18) {
 			int strLen = (int) g.getFontMetrics().getStringBounds("You won! You actually did it!", g).getWidth();
-			g.drawString("It will be much harder...", gc.getWidth() / 2 - strLen / 2, 100);						
+			g.drawString("It will be much harder...", gc.getWidth() / 2 - strLen / 2, 50);						
 		}else {
 			int strLen = (int) g.getFontMetrics().getStringBounds("What a shame...", g).getWidth();
-			g.drawString("What a shame...", gc.getWidth() / 2 - strLen / 2, 100);			
+			g.drawString("What a shame...", gc.getWidth() / 2 - strLen / 2, 50);			
 		}
 		int strLen = (int) g.getFontMetrics().getStringBounds("Level: " + map.getLevel(), g).getWidth();
-		g.drawString("Level: " + map.getLevel(), gc.getWidth() / 2 - strLen / 2, 200);
+		g.drawString("Level: " + map.getLevel(), gc.getWidth() / 2 - strLen / 2, 100);
 		gui.render(gc, g);
 	}
 	
