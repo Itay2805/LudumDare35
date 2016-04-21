@@ -39,36 +39,110 @@ Info (ObjectManager): Added new object Player (tag: player)
 Info (ImageLoader): Loading image /ui/score.png
 Info (MapLoader): The map level_17.map has been loaded!
 Info (ObjectManager): Added new object Player (tag: player)
-Info (ImageLoader): Loading image /ui/score.png
-Info (MapLoader): The map level_17.map has been loaded!
-Info (ObjectManager): Added new object Player (tag: player)
-Info (ImageLoader): Loading image /ui/score.png
-Info (MapLoader): The map level_17.map has been loaded!
-Info (ObjectManager): Added new object Player (tag: player)
-Info (ImageLoader): Loading image /ui/score.png
-Info (MapLoader): The map level_17.map has been loaded!
-Info (ObjectManager): Added new object Player (tag: player)
-Info (ImageLoader): Loading image /ui/score.png
-Info (MapLoader): The map level_17.map has been loaded!
-Info (ObjectManager): Added new object Player (tag: player)
-Info (ImageLoader): Loading image /ui/score.png
-Info (SoundClip): Loaded sound /sound/soundtrack2.wav.
-Info (MapLoader): The map level_17.map has been loaded!
-Info (ObjectManager): Added new object Player (tag: player)
-Info (ImageLoader): Loading image /ui/score.png
-Info (MapLoader): The map level_17.map has been loaded!
-Info (ObjectManager): Added new object Player (tag: player)
-Info (ImageLoader): Loading image /ui/score.png
-Info (MapLoader): The map level_17.map has been loaded!
-Info (ObjectManager): Added new object Player (tag: player)
-Info (ImageLoader): Loading image /ui/score.png
-Info (MapLoader): The map level_17.map has been loaded!
-Info (ObjectManager): Added new object Player (tag: player)
-Info (ImageLoader): Loading image /ui/score.png
-Info (MapLoader): The map level_17.map has been loaded!
-Info (ObjectManager): Added new object Player (tag: player)
-Info (ImageLoader): Loading image /ui/final.png
-Error (MapLoader): null
-Info (MapLoader): The map level_18.map has been loaded!
-Info (ImageLoader): Loading image /ui/score.png
-Info (SoundClip): Loaded sound /sound/soundtrack2.wav.
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
+Info (ImageLoader): Loading image /level_res/level_17_dialog_1.png
